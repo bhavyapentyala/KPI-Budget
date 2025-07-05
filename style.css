@@ -1,0 +1,147 @@
+/* ================================
+   Global Styles
+================================== */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    line-height: 1.6;
+
+    /* Add space for fixed navbar and footer */
+    padding-top: 70px;
+    /* Height of navbar */
+    padding-bottom: 60px;
+    /* Height of footer */
+}
+
+
+/* ================================
+   Fixed Navigation Bar
+================================== */
+.navbar {
+    background-color: #003366;
+    padding: 1rem 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.nav-item:hover {
+    text-decoration: underline;
+    color: #ffcc00;
+}
+
+
+/* ================================
+   Headings
+================================== */
+h2 {
+    text-align: center;
+    color: #003366;
+    margin-top: 1rem;
+}
+
+h3 {
+    color: #0055a5;
+}
+
+
+/* ================================
+   Toolkit Grid Layout
+================================== */
+.toolkit-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.toolkit-item {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.toolkit-item p {
+    margin: 0.5rem 0;
+}
+
+
+/* ================================
+   Buttons and Links
+================================== */
+a.download-button,
+.toolkit-item a {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #003366;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+a.download-button:hover,
+.toolkit-item a:hover {
+    background-color: #0055a5;
+}
+
+/* Card Style */
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 2rem;
+    max-width: 900px;
+    margin: auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* ================================
+   Main Section
+================================== */
+main,
+section {
+    padding: 2rem;
+}
+
+
+/* ================================
+   Fixed Footer
+================================== */
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    font-size: 0.9rem;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+}
